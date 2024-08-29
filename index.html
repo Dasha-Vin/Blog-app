@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Block App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Приложение блог</h1>
+        <div class="section">
+            <div class="new-post-section">
+                <h2>Новый пост</h2>
+    
+                <input 
+                    autofocus maxlength="50"
+                    class="js-title-input title-input" 
+                    type="text"
+                    placeholder="Заголовок"
+                />
+                <div class="charCountTitle">0/50</div>
+                <textarea
+                    autofocus maxlength="100"
+                    class="js-text-input text-input" 
+                    type="text"
+                    placeholder="Напишите пост"
+                ></textarea>
+                <div class="charCountText">0/100</div>
+        
+                <button class="js-new-post-btn new-post-btn">
+                    Опубликовать
+                </button>
+                <button class="js-delete-post-btn delete-post-btn">
+                    Очистить ленту
+                </button>
+
+                <div class="js-validationMessage validationMessage validationMessage-hidden"></div>
+            </div>
+        
+            <div class="post-section">
+                <h2>Лента</h2>
+                
+                <div class="js-posts posts">
+                    Тут пока пусто...
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
